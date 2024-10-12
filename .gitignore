@@ -4,10 +4,6 @@
 *.iws
 *.ipr
 
-# Build output
-target/
-build/
-
 # Mac OS
 .DS_Store
 re
