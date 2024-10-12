@@ -31,6 +31,16 @@ pipeline {
                 }
             }
         }
+
+        stage('Debug Info') {
+            steps {
+                script {
+                    // List the contents of target/surefire-reports and target
+                    sh 'echo "Contents of target/surefire-reports:" && ls -al target/surefire-reports'
+                    sh 'echo "Contents of target:" && ls -al target'
+                }
+            }
+        }
     }
 
     post {
